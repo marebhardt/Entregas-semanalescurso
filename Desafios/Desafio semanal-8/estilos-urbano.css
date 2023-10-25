@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@1&family=Anton&family=DM+Serif+Display:ital@1&family=Indie+Flower&family=Nosifer&family=Poppins:wght@200&family=Roboto+Serif:ital,opsz,wght@1,8..144,100;1,8..144,200&family=Roboto:wght@100;300;900&family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@1&family=Anton&family=DM+Serif+Display:ital@1&family=Indie+Flower&family=Josefin+Sans:ital,wght@1,300&family=Nosifer&family=Poppins:wght@200&family=Roboto+Serif:ital,opsz,wght@1,8..144,100;1,8..144,200&family=Roboto:wght@100;300;900&family=Rubik+Iso&display=swap');
+
+
+body {
+    background-image: url(images/urbano.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+}
+nav button, nav select, nav .options{
+    display: inline-block;
+    font-family: 'Indie Flower', cursive;
+    font-size: 15px;
+    padding: 10px 20px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #fe0505;
+    border-radius: 5px;
+    background: linear-gradient(to right, #ff0000, #000);
+    cursor: pointer;
+}
+nav option{
+    color: #000;
+}
+
+nav button.activo{
+    border-color: gray;
+    border-style: outset;
+}
+nav .options{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+}
+nav .options label{
+    color: #a6c1b9;
+    font-weight: bolder;
+}
+
+
+.boton-degradado:hover {
+    color: #000;
+    background: linear-gradient(to right, #000, #ff0000);
+
+
+}
+
+
+h1 {
+    color: rgba(223, 27, 27, 0.7);
+    transition: color 0.3s ease;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    font-size: 48px;
+    text-align: center;
+    border-top: 5px solid #FFCCCC;
+    border-bottom: 5px solid #FFCCCC;
+    border-radius: 50px;
+    padding: 20px;
+    text-shadow: 6px 2px 4px #fff;
+
+}
+
+h1:hover {
+    color: rgb(255, 0, 0);
+}
+
+legend {
+    background-image: url(images/dtu.png);
+    height: auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+    padding: 20px;
+    margin: 20px;
+
+
+}
+
+.legend1 {
+    background-image: url(images/contactourb.png);
+    height: auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+    padding: 20px;
+    margin: 20px;
+}
+
+.legend2 {
+    background-image: url(images/acturb.png);
+    height: auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+    padding: 20px;
+    margin: 20px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    background-color: rgba(223, 27, 27, 0.7);
+    padding: 20px;
+    border: 2px solid #fe0505;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+fieldset:hover {
+    background-color: rgba(223, 27, 27, 0.9);
+}
+
+.dots {
+    display: block;
+    border: none;
+    border-top-width: 12px;
+    border-top-style: ridge;
+    border-top-color: #d6e2de;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+label {
+    color: rgb(223, 221, 221);
+    font-size: 16px;
+}
+
+
+input,
+textarea {
+    color: none;
+
+}
+
+input:focus,
+textarea:focus {
+    background-color: none;
+}
+
+input[type=tel],
+input[type=email] {
+    text-align: right;
+}
+
+.checkboxes {
+    text-align: left;
+}
+
+.checkboxes .inputs {
+    display: block;
+}
+
+.terms {
+    display: inline-flex;
+    color: rgb(238, 236, 236);
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00f, 0 0 70px #00f, 0 0 80px #00f, 0 0 100px #00f;
+}
+
+.terms .row {
+    margin-bottom: 10px;
+
+}
+
+.terms label {
+    color: rgb(250, 248, 248);
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00f, 0 0 70px #00f, 0 0 80px #00f, 0 0 100px #00f;
+
+}
+
+.actions {
+    display: flex;
+
+    justify-content: center;
+}
+
+.boton {
+    display: inline-block;
+    text-align: right;
+    font-family: 'Indie Flower', cursive;
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 767px) {
+    nav{
+        position: relative;
+    }
+    nav >:not(:first-child){
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+@media (min-width: 992px) {}

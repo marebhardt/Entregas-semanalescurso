@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@1&family=Anton&family=DM+Serif+Display:ital@1&family=Gochi+Hand&family=Indie+Flower&family=Josefin+Sans:ital,wght@1,300&family=Nosifer&family=Poppins:wght@200&family=Roboto+Serif:ital,opsz,wght@1,8..144,100;1,8..144,200&family=Roboto:wght@100;300;900&family=Rubik+Iso&display=swap');
+
+
+body {
+    background-image: url(images/fondo8.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20vw;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+}
+nav button, nav select, nav .options{
+    display: inline-block;
+    font-family: 'Indie Flower', cursive;
+    font-size: 15px;
+    padding:10px 20px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid silver;
+    border-radius: 5px;
+    background: linear-gradient(to right, #ff0090, #f748f7);
+    cursor: pointer;
+}
+nav button.activo{
+    border-style: inset;
+    border-color: transparent;
+    opacity: 0.5;
+}
+nav .options{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+}
+nav .options label{
+    color: #fff;
+    font-weight: bolder;
+}
+
+.boton-degradado:hover {
+    color: #000;
+    background: linear-gradient(to right, #f9f7f7,rgb(162, 30, 144));
+}
+
+h1 {
+    background-image: url(images/gymbarbie.png);
+    height: auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+legend {
+    background-image: url(images/datosp.png);
+    height:auto;
+    background-size:contain ;
+    background-position:center;
+    background-repeat: no-repeat;
+    color:transparent;
+    padding:20px;
+    margin:20px;
+    text-shadow: none;
+
+}
+.legend1 {
+    background-image: url(images/contacto.png);
+    height: auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:transparent;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.legend2 {
+    background-image: url(images/Actividades.png);
+    height: auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:transparent;
+    padding: 20px;
+    margin: 20px;
+
+}
+h3 {
+    font-family:'Gochi Hand', cursive ;
+    font-size: 12px;
+    color: #80096a;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    font-size: 14px;
+    font-family:'Gochi Hand',cursive ;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border: 4px dashed silver;
+    background-color: #ECECEC;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fa7cfc;
+    animation: apareceYDesaparece 2s infinite;
+
+}
+@keyframes apareceYDesaparece {
+    0% {
+        border: 2px solid transparent;
+    }
+
+    50% {
+        border: 2px solid  rgb(87, 2, 55);
+    }
+
+    100% {
+        border: 2px solid transparent;
+    }
+}
+
+fieldset:hover {
+    background-color:transparent;
+
+}
+
+
+
+label {
+    color: #80096a;
+}
+
+input,
+textarea {
+    color: #fff;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #fb93b2;
+}
+
+input[type=tel],
+input[type=email]
+{text-align: center;
+}
+
+
+
+.checkboxes {
+    text-align: left;
+}
+
+.checkboxes .inputs {
+    display: inline-block;
+}
+
+.terms {
+    display: block;
+    color: #80096a;
+}
+
+.terms .row {
+    margin-bottom: 10px;
+}
+
+.terms label {
+    color: #80096a;
+    font-family: 'Gochi Hand',cursive;
+}
+
+.actions {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.boton {
+    display: inline-flex;
+    margin: 0 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    place-items: left;
+    background-color: #f62881;
+    color: #80096a;
+    font-family:'Gochi Hand', cursive ;
+    margin: 10px;
+    padding: 10px 20px;
+    border-style: 3px dotted;
+    border-width: 1px;
+    border-radius: 50%;
+    border-color: rgb(247, 229, 229);
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+@media (max-width: 767px) {
+    body{
+        padding: 0;
+    }
+    fieldset{
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        position: sticky;
+    }
+    nav >:not(:first-child){
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+@media (min-width: 992px) {}
