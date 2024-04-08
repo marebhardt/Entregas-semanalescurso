@@ -4,7 +4,7 @@ const Joi = require('joi');
 
 const PORT = 3000;
 const HOST = 'localhost';
-const MONGOURL = 'mongodb://127.0.0.1:27017/tareas';
+const MONGOURL = 'mongodb://localhost:27017/tareas';
 
 const app = express();
 app.use(express.json());
